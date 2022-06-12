@@ -30,7 +30,7 @@
             color: white;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.578);
             border: 1px solid black;
-            background-color: lightgray;
+            background-color: gray;
         }
 
         td{
@@ -40,6 +40,15 @@
 
         td.numero{
             text-align: right;
+        }
+
+        td#escu{
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
 
     </style>
@@ -175,7 +184,7 @@
         </tbody>
         <tfoot>
             <th scope="row">Total de Pessoas</th>
-            <td class="numero"><strong>000000</strong></td>
+            <td class="numero" id="escu"><strong>000000</strong></td>
         </tfoot>
      </table>
 </body>
